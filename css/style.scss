@@ -5,6 +5,16 @@ body {
   margin: 0;
 }
 
+html {
+  font-size: 10px;
+}
+body {
+  font-size: 16px;
+}
+* {
+  box-sizing: border-box;
+}
+
 ul,
 li {
   margin: 0;
@@ -28,6 +38,7 @@ li {
 
 .nav {
   position: fixed;
+  // border: 5px solid yellow;
   top: 0;
   left: 0;
   bottom: 0;
@@ -50,9 +61,25 @@ li {
     transition: transform 200ms ease-in-out;
     overflow-y: auto;
   }
-  ul {
+  .nav__close-icon {
+    z-index: 2;
+    color: #fff;
+    height: 6rem;
+    width: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    // border: 5px solid red;
     
+
+
   }
+
+
 
 }
 

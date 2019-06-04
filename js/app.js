@@ -5,6 +5,9 @@ const states = {
   nav: false,
 }
 
+const closeIcon = document.querySelector('.nav__close-icon');
+
+
 document.body.addEventListener('click', function() {
   this.classList.toggle('nav-open');
   // if(states.nav === false) {
