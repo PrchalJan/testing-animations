@@ -58,7 +58,7 @@ li {
   overflow-y: auto;
 }
 
-body:hover .nav {
+.nav-open .nav {
   background-color: blue;
   -webkit-transform: translateX(0);
           transform: translateX(0);
@@ -66,7 +66,7 @@ body:hover .nav {
   transition: translate 0ms ease-in-out 0ms, background-color 1000ms;
 }
 
-body:hover .nav .container {
+.nav-open .nav .container {
   -webkit-transform: translateX(0);
           transform: translateX(0);
   -webkit-transition: -webkit-transform 1000ms ease-in-out;
