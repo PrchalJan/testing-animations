@@ -23,7 +23,7 @@ li {
 
 .content {
   height: 100%;
-  background-color: yellow;
+  background-color: #f4f4f4;
 }
 
 .nav {
@@ -41,12 +41,12 @@ li {
   transition: transform 0ms ease-in-out 200ms, background-color 200ms, -webkit-transform 0ms ease-in-out 200ms;
 }
 
-.nav .container {
+.nav .nav__bar {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 80%;
-  min-width: 350px;
-  background-color: green;
+  min-width: 200px;
+  background-color: #d2d2d2;
   height: 100%;
   padding: 50px;
   -webkit-transform: translateX(-100%);
@@ -59,19 +59,19 @@ li {
 }
 
 .nav-open .nav {
-  background-color: blue;
+  background-color: rgba(0, 0, 0, 0.9);
   -webkit-transform: translateX(0);
           transform: translateX(0);
-  -webkit-transition: translate 0ms ease-in-out 0ms, background-color ease-out 500ms;
-  transition: translate 0ms ease-in-out 0ms, background-color ease-out 500ms;
+  -webkit-transition: translate 0ms ease-in-out 0ms, background-color ease-out 350ms;
+  transition: translate 0ms ease-in-out 0ms, background-color ease-out 350ms;
 }
 
-.nav-open .nav .container {
+.nav-open .nav .nav__bar {
   -webkit-transform: translateX(0);
           transform: translateX(0);
-  -webkit-transition: -webkit-transform 500ms ease-in-out;
-  transition: -webkit-transform 500ms ease-in-out;
-  transition: transform 500ms ease-in-out;
-  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+  -webkit-transition: -webkit-transform 350ms ease-in-out;
+  transition: -webkit-transform 350ms ease-in-out;
+  transition: transform 350ms ease-in-out;
+  transition: transform 350ms ease-in-out, -webkit-transform 350ms ease-in-out;
 }
 /*# sourceMappingURL=style.css.map */
