@@ -62,16 +62,16 @@ li {
   background-color: blue;
   -webkit-transform: translateX(0);
           transform: translateX(0);
-  -webkit-transition: translate 0ms ease-in-out 0ms, background-color ease-in-out 5000ms;
-  transition: translate 0ms ease-in-out 0ms, background-color ease-in-out 5000ms;
+  -webkit-transition: translate 0ms ease-in-out 0ms, background-color ease-out 500ms;
+  transition: translate 0ms ease-in-out 0ms, background-color ease-out 500ms;
 }
 
 .nav-open .nav .container {
   -webkit-transform: translateX(0);
           transform: translateX(0);
-  -webkit-transition: -webkit-transform 1000ms ease-in-out;
-  transition: -webkit-transform 1000ms ease-in-out;
-  transition: transform 1000ms ease-in-out;
-  transition: transform 1000ms ease-in-out, -webkit-transform 1000ms ease-in-out;
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
 }
 /*# sourceMappingURL=style.css.map */

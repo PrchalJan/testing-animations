@@ -59,10 +59,10 @@ li {
 .nav-open .nav {
   background-color: blue;
   transform: translateX(0);
-  transition: translate 0ms ease-in-out 0ms, background-color ease-in-out 5000ms;
+  transition: translate 0ms ease-in-out 0ms, background-color ease-out 500ms;
   // transition-delay: 0ms;
   .container {
     transform: translateX(0);
-    transition: transform 1000ms ease-in-out;
+    transition: transform 500ms ease-in-out;
   }
 }
