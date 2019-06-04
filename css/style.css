@@ -62,8 +62,8 @@ li {
   background-color: blue;
   -webkit-transform: translateX(0);
           transform: translateX(0);
-  -webkit-transition: translate 0ms ease-in-out 0ms, background-color 1000ms;
-  transition: translate 0ms ease-in-out 0ms, background-color 1000ms;
+  -webkit-transition: translate 0ms ease-in-out 0ms, background-color ease-in-out 5000ms;
+  transition: translate 0ms ease-in-out 0ms, background-color ease-in-out 5000ms;
 }
 
 .nav-open .nav .container {
