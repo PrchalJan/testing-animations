@@ -27,7 +27,7 @@ li {
 }
 
 ul {
-  padding: 50px;
+  padding: 50px 0;
 }
 
 li {
@@ -62,7 +62,7 @@ li {
   min-width: 200px;
   background-color: #d2d2d2;
   height: 100%;
-  padding: 50px;
+  padding: 50px 0;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
   -webkit-transition: -webkit-transform 200ms ease-in-out;
@@ -142,6 +142,6 @@ li:nth-of-type(3) {
 }
 
 #innerul {
-  margin: 50px;
+  margin: 50px 0;
 }
 /*# sourceMappingURL=style.css.map */
