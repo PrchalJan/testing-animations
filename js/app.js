@@ -9,7 +9,7 @@ const closeIcon = document.querySelector('.nav__close-icon');
 
 
 document.body.addEventListener('click', function() {
-  this.classList.toggle('nav-open');
+  this.classList.toggle('li-open');
   // if(states.nav === false) {
   //   document.body.classList.add('nav-open');
   //   states.nav = true;

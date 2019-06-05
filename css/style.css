@@ -27,11 +27,12 @@ li {
 }
 
 ul {
-  padding: 50px auto;
+  padding: 50px;
 }
 
 li {
-  margin: 50px auto;
+  height: 200px;
+  overflow: hidden;
 }
 
 .content {
@@ -106,5 +107,41 @@ li {
   transition: -webkit-transform 350ms ease-in-out;
   transition: transform 350ms ease-in-out;
   transition: transform 350ms ease-in-out, -webkit-transform 350ms ease-in-out;
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+li:first-of-type {
+  background: red;
+}
+
+li:nth-of-type(2) {
+  background: green;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  height: 0;
+  -webkit-transition: height 2000ms;
+  transition: height 2000ms;
+}
+
+li:nth-of-type(3) {
+  background: blue;
+}
+
+.li-open li:nth-of-type(2) {
+  background: green;
+  height: 430px;
+}
+
+#innerul {
+  margin: 50px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -24,11 +24,14 @@ li {
 }
 
 ul {
-  padding: 50px auto;
+  // padding: 50px auto;
+  padding: 50px;
 }
 
 li {
-  margin: 50px auto;
+  
+  height: 200px;
+  overflow: hidden;
 }
 
 .content {
@@ -92,4 +95,39 @@ li {
     transform: translateX(0);
     transition: transform 350ms ease-in-out;
   }
+}
+
+ul {
+  display: flex;
+  flex-direction: column
+}
+
+li:first-of-type {
+  background: red;
+}
+li:nth-of-type(2) {
+  background: green;
+  // transform: scaleY(0);
+  // transition: transform 1000ms;
+  transform-origin: top;
+  height: 0;
+  transition: height 2000ms;
+}
+li:nth-of-type(3) {
+  background: blue;
+}
+
+.li-open li:nth-of-type(2) {
+  background: green;
+  // transform: scaleY(1);
+  // transition: transform 1000ms;
+  height: 430px;
+}
+
+li + li {
+  // margin-top: 20px;
+}
+
+#innerul {
+  margin: 50px;
 }
