@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: block;
+}
+
+
+.grid {
+  width: 90%;
+  height: 2500px;
+  margin: 30px auto;
+  border: 3px solid black;
+  position: relative;
+
+  
+}
+
+.grid__item {
+  box-sizing: border-box;
+  width: 25%;
+  /* border: 3px dashed */
+  min-height: 50px;
+  position: absolute;
+  /* padding: 5px; */
+  /* overflow: hidden; */
+}
+.grid__item:nth-of-type(even) {
+  border: 3px solid red;
+}
+.grid__item:nth-of-type(odd) {
+  border: 3px solid blue;
+}
+@media(max-width: 900px) {
+  .grid__item {
+    width: 33.3333%
+  }
+}
+
+.grid__image {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+  
+}
